@@ -1,0 +1,211 @@
+html, body {
+    background-color: rgb(109, 246, 175);
+
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background-color: rgb(60, 222, 133);
+
+    border-radius: 10px;
+    border: 2px solid black;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    width: 100%;
+    height: 40px;
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button :hover {
+    box-shadow: 10px rgba(60, 222, 133, 0.7);
+    
+}
+
+/* Header design*/
+
+header {
+
+    box-sizing: border-box;
+    background-color: rgb(60, 222, 133);
+    
+    height: 90px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 6px 15px;
+
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+header .profile,
+header .profile a {
+    height: 95%;
+    width: fit-content;
+
+    font-size: 99%;
+
+    
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+
+    background-color: rgb(7, 197, 99);
+}
+
+header .profile a {
+    padding: 5px 6px;
+    
+    border-radius: 8px;
+    border: 1px black solid;
+}
+
+header .profile a img{
+    border-radius: 50%;
+    
+    margin: 3px 0px;
+
+    height: 70%;
+    width: auto;
+}
+
+
+/* Body */
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Reccommended/affiliated projects*/
+
+.fav-proj-container {
+
+    background-color: rgb(7, 197, 99);
+    min-width: 80px;
+    max-width: 50%;
+    height: min-content;
+
+    padding: 10px 20px;
+
+    border-radius: 25px;
+    border: 2px black solid;
+
+    justify-content: center;
+}
+
+.fav-proj-container h3 {
+    justify-self: center;
+    font-size: 20px;
+}
+
+.fav-proj-header {
+    background-color: rgb(64, 232, 139);
+
+    border: 2px black solid;
+    border-radius: 15px;
+    padding: 10px;
+
+    font-size: 30px;
+
+    text-align: center;
+
+    width: 100%;
+}
+
+.fav-proj-container img {
+    
+    border-radius: 20px;
+
+    border: 3px solid white;
+
+    width: 100%;
+}
+
+.fav-proj-container .fav-proj-link a{
+    background-color: rgb(64, 232, 139);
+
+    border-radius: 10px;
+    border: 2px solid black;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    width: 100%;
+    height: 40px;
+
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+
+    font-size: 125%;
+    font-weight: 600;
+    color: black;
+
+    text-decoration: none;
+
+    box-shadow: 0px 5px rgb(11, 57, 32);
+
+}
+
+
+.fav-proj-link a:hover {
+    box-shadow: 0px 5px rgb(11, 57, 32);
+    transition: all 100ms;
+    
+}
+
+.fav-proj-link a:active {
+    box-shadow: 0px 0px black;
+    transition: all 50ms;
+}
+
+main {
+    flex: 1;
+    
+    margin: 30px 20px;
+}
+
+/* Footer */
+
+footer {
+    min-height: 80px; /* or whatever height you want */
+    position: relative;
+    background-color: rgb(90, 89, 89);
+}
+
+footer a {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: black;
+}
+
+footer .credit {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
