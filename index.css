@@ -32,12 +32,10 @@ header {
 
 header .profile,
 header .profile a {
-    height: 95%;
-    width: fit-content;
+    height: 94%;
+    min-width: fit-content;
 
     font-size: 99%;
-
-    
 
     display: flex;
     flex-direction: column;
