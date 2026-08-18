@@ -5,11 +5,6 @@ export default function App() {
   return (
     <div className="page">
       <header className="hero">
-        <div className="hero__ruling" aria-hidden="true">
-          {Array.from({ length: 6 }).map((_, i) => (
-            <span key={i} />
-          ))}
-        </div>
 
         <h1 className="hero__name">Kaspar Aun</h1>
 
