@@ -22,9 +22,9 @@ export const projects: Project[] = [
     title: "Automatic timetable generator",
     credit: "By mk41 and me",
     description:
-      "Generates a clash-free class schedule automatically — no more manually juggling rooms, teachers, and time slots on a whiteboard.",
+      "Generates a personal timetable based on Edupage data",
     image: "/resources/timetable-home.png",
-    imageAlt: "Screenshot of the automatic timetable generator interface",
+    imageAlt: "Screenshot of the automatic timetable generator's homepage",
     links: [{ label: "Open app", href: "https://kasparaun.com/tunniplaan" }],
     tech: [
       { label: "React", category: "web" },
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     title: "Card game points app",
     credit: "By me and Gemini AI",
     description:
-      "A score tracker for Tuhat, the Estonian card game — keeps running totals so no one has to do the maths at the table.",
+      "A score tracker for Tuhat, the card game — keeps running totals so no one has to do the maths at the table.",
     image: "/resources/tuhat-app.png",
     imageAlt: "Screenshot of the Tuhat card game points tracker app",
     links: [{ label: "View on GitHub", href: "https://github.com/hacker30083/tuhat-app" }],
