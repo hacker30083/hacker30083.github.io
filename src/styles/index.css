@@ -1,0 +1,360 @@
+:root {
+  --paper: #fbf9f4;
+  --ink: #1c2340;
+  --ink-soft: #565f88;
+  --rule: #dad5c8;
+  --rule-strong: #c3bcaa;
+
+  --cobalt: #3457d5;
+  --cobalt-dim: #edf0fc;
+  --amber: #c97a1f;
+  --amber-dim: #fbf1e1;
+  --moss: #3f7256;
+  --moss-dim: #e9f1ea;
+  --plum: #7a4fae;
+  --plum-dim: #f2ebf9;
+
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+
+  --radius: 14px;
+  --shadow: 0 1px 2px rgba(28, 35, 64, 0.04), 0 8px 24px -12px rgba(28, 35, 64, 0.18);
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cobalt);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+  padding: 88px 0 56px;
+  border-bottom: 1px solid var(--rule);
+  overflow: hidden;
+}
+
+.hero__ruling {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero__ruling span {
+  width: 1px;
+  height: 100%;
+  background: var(--rule);
+  opacity: 0.6;
+}
+
+.hero__eyebrow {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cobalt);
+  margin: 0 0 18px;
+}
+
+.hero__name {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  margin: 0 0 14px;
+}
+
+.hero__tagline {
+  position: relative;
+  z-index: 1;
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  margin: 0 0 36px;
+  max-width: 40ch;
+}
+
+.hero__github {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  padding: 8px 18px 8px 8px;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.95rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.hero__github:hover {
+  transform: translateY(-1px);
+  border-color: var(--cobalt);
+}
+
+.hero__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.hero__github strong {
+  font-weight: 600;
+}
+
+/* ---------- Projects ---------- */
+
+.projects {
+  padding-top: 56px;
+}
+
+.projects__heading {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(28, 35, 64, 0.06), 0 16px 32px -14px rgba(28, 35, 64, 0.26);
+}
+
+.project-card__frame {
+  position: relative;
+  background: var(--cobalt-dim);
+  border-bottom: 1px solid var(--rule);
+}
+
+.project-card__period {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 4px 9px;
+  border-radius: 999px;
+}
+
+.project-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.project-card__body {
+  padding: 22px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.project-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.project-card__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.project-card__credit {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.project-card__description {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.project-card__chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.project-card__links {
+  margin-top: auto;
+  padding-top: 6px;
+  display: flex;
+  gap: 16px;
+}
+
+.project-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--cobalt);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.project-card__link:hover {
+  border-color: var(--cobalt);
+}
+
+/* ---------- Chips ---------- */
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.chip__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.chip--web {
+  background: var(--cobalt-dim);
+  color: var(--cobalt);
+}
+
+.chip--language {
+  background: var(--plum-dim);
+  color: var(--plum);
+}
+
+.chip--mobile {
+  background: var(--moss-dim);
+  color: var(--moss);
+}
+
+.chip--tool {
+  background: var(--amber-dim);
+  color: var(--amber);
+}
+
+.chip--ai {
+  background: #eef1f6;
+  color: var(--ink-soft);
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  margin-top: 72px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+/* ---------- Motion & small screens ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__github,
+  .project-card {
+    transition: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 64px 0 40px;
+  }
+
+  .page {
+    padding: 0 18px 64px;
+  }
+}

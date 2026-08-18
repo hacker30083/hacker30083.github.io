@@ -1,55 +1,20 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      href="https://avatars.githubusercontent.com/u/114168113?v=4"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kaspar Aun</title>
-    <link rel="stylesheet" href="./index.css" />
+    <meta name="description" content="Kaspar Aun — builder of small, useful things. Automatic timetable generator and a card-game score tracker." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%233457D5%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%23FBF9F4%22 font-family=%22monospace%22>K</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
-  <header>
-    <h1>Kaspar Aun</h1>
-
-    <div class="profile">
-      <a href="https://github.com/hacker30083" target="no-open no-reffer">
-        <img
-          src=" https://avatars.githubusercontent.com/u/114168113?v=4"
-          alt="My GitHub profile"
-        />
-        My GitHub
-      </a>
-    </div>
-  </header>
-
   <body>
-    <main>
-      <div class="fav-proj-container">
-        <h1 class="fav-proj-header">Automatic timetable generator</h1>
-        <h3>By mk41 and me</h3>
-        <img src="resources/timetableGenerator.png" />
-        <div class="fav-proj-link">
-          <a target="noop
-          pen norefer" href="https://kasparaun.com/tunniplaan">https://kasparaun.com/tunniplaan</a>
-        </div>
-      </div>
-      <div class="fav-proj-container">
-        <h1 class="fav-proj-header">Card game points app</h1>
-        <h3>By me and Gemini AI</h3>
-        <img src="resources/tuhat-app.png" />
-        <div class="fav-proj-link">
-          <a target="noop
-          pen norefer" href="https://github.com/hacker30083/tuhat-app">https://github.com/hacker30083/tuhat-app</a>
-        </div>
-      </div>
-    </main>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
-
-  <footer>
-    <p class="credit" id="copyright-text"></p>
-  </footer>
-  <script src="footer.js"></script>
 </html>
