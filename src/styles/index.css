@@ -319,8 +319,8 @@ a {
 
 .project-card__image {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  object-fit: fill;
 }
 
 /* ---------- Card Body ---------- */
