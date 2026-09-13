@@ -54,7 +54,7 @@ export const projects: Project[] = [
       "List of learning materials for ProTERA",
     image: "/resources/protera-learning-materials.png",
     imageAlt: "Screenshot of the ProTERA learning materials page",
-    links: [{ label: "Open website", href: "https://github.com/hacker30083/protera-learning-materials" }],
+    links: [{ label: "Open website", href: "https://kasparaun.com/protera-learning-materials" }],
     tech: [
       { label: "HTML", category: "web" },
       { label: "CSS", category: "web"}
