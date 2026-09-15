@@ -31,21 +31,18 @@ export default function App() {
           </a>
         </div>
       </header>
-        <section className="about-section">
-          <h2 className="section-title">About Me</h2>
-          <p className="section-description">
-            I am a student who's passionate about IT and software development. I
-            have created and contributed to projects requiring both frontend and
-            backend development, a selection of which can be seen below. During
-            these projects I have familiarized myself with development/DevOps
-            principles such as CI/CD, Git, various technologies and the
-            full-stack software model.
-          </p>
-        </section>
-
+      <section className="about-section">
+        <h2 className="section-title">About Me</h2>
+        <p className="section-description">
+          I am a student who's passionate about IT and software development. I
+          have created and contributed to projects requiring both frontend and
+          backend development, a selection of which can be seen below. During
+          these projects I have familiarized myself with development/DevOps
+          principles such as CI/CD, Git, various technologies and the
+          full-stack software model.
+        </p>
+      </section>
       <main className="projects" id="projects">
-        <h2 className="projects__heading">Projects</h2>
-
         <section className="projects-section">
           <h2 className="section-title">Projects</h2>
           <p className="section-description">

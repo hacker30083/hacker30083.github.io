@@ -206,6 +206,15 @@ a {
   border-radius: 50%;
 }
 
+/* ---------- About Me ---------- */
+
+.about-section {
+  border-bottom: 1px solid var(--rule);
+
+  padding-bottom: 32px;
+}
+
+
 /* ---------- Small Screens ---------- */
 
 @media (max-width: 480px) {
@@ -225,9 +234,6 @@ a {
 
 /* ---------- Projects ---------- */
 
-.projects {
-  padding-top: 56px;
-}
 
 .projects__heading {
   margin: 0 0 24px;
@@ -237,7 +243,7 @@ a {
   border-bottom: 1px solid var(--rule);
 
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
