@@ -31,9 +31,6 @@ export default function App() {
           </a>
         </div>
       </header>
-
-      <main className="projects" id="projects">
-        <h2 className="projects__heading">Projects</h2>
         <section className="about-section">
           <h2 className="section-title">About Me</h2>
           <p className="section-description">
@@ -45,6 +42,9 @@ export default function App() {
             full-stack software model.
           </p>
         </section>
+
+      <main className="projects" id="projects">
+        <h2 className="projects__heading">Projects</h2>
 
         <section className="projects-section">
           <h2 className="section-title">Projects</h2>
