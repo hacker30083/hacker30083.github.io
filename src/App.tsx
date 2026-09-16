@@ -126,8 +126,7 @@ export default function App() {
 
       <footer className="footer">
         <p>
-          &copy; {new Date().getFullYear()} Kaspar Aun. Contact:{" "}
-          <a href="mailto:kaspar@kasparaun.com">kaspar@kasparaun.com</a>
+          &copy; {new Date().getFullYear()} Kaspar Aun
         </p>
       </footer>
     </div>
